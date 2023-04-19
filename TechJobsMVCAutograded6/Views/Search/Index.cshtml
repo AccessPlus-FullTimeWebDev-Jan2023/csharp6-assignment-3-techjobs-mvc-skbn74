@@ -27,10 +27,11 @@
     <hr />
 
     @* TODO #4 - Loop over the search results to display all job fields. *@
-    @foreach (var jobs in ViewBag.jobs)
+    @if(ViewBag.jobs != null)
     {
-        if(ViewBag.jobs != null)
+        @foreach (var jobs in ViewBag.jobs) 
         {
+            <table class="table">
             <tr>
                 <th>Name</th>
                 <td>@jobs.Name</td>
@@ -51,6 +52,7 @@
                 <th>Skill</th>
                 <td>@jobs.CoreCompetency</td>
             </tr>
+            </table>
         }
     }
 

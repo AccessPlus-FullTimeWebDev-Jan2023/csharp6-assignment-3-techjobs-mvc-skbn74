@@ -4,8 +4,7 @@ using TechJobsMVCAutograded6.Controllers;
 
 namespace AutogradingTests;
 
-[TestClass]
-public class TestTaskThree
+[TestClass]public class TestTaskThree
 {
     private readonly SearchController _controller;
 
